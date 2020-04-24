@@ -1,7 +1,7 @@
 from django.urls import path, include
 from django.views.generic import TemplateView
 from rest_framework.routers import DefaultRouter
-from rest_framework.schemas import get_schema_view
+
 
 from .views import PostViewSet, CommentViewSet, GroupViewSet, FollowViewSet
 
@@ -20,15 +20,7 @@ urlpatterns = [
     path('', include(router.urls)),
     path('token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
     path('token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
-    path('openapi/', get_schema_view(
-        title="yatube-API",
-        description="API for all things …",
-        version="1.0.0"
-    ), name='openapi'),
-    path('redoc/', TemplateView.as_view(
-        template_name='redoc.html',
-        extra_context={'schema_url':'openapi'}
-    ), name='redoc'),
+    path('redoc/', TemplateView.as_view(template_name='redoc2.html'), name='redoc2'),
 ]
 
 
