@@ -22,12 +22,12 @@
 
 ##### Доступные методы:
 
-`/api/v1/posts/  (GET, POST, PUT, PATCH, DELETE)
-/api/v1/posts/<id>  (GET, POST, PUT, PATCH, DELETE)
-/api/v1/posts/<id>/comments (GET, POST, PUT, PATCH, DELETE)
-/api/v1/posts/<id>/comments/<id> (GET, POST, PUT, PATCH, DELETE)
-/api/v1/group/  (GET, POST)
-/api/v1/follow/ (GET, POST)`
+`/api/v1/posts/  (GET, POST, PUT, PATCH, DELETE)`
+`/api/v1/posts/<id>  (GET, POST, PUT, PATCH, DELETE)`
+`/api/v1/posts/<id>/comments (GET, POST, PUT, PATCH, DELETE)`
+`/api/v1/posts/<id>/comments/<id> (GET, POST, PUT, PATCH, DELETE)`
+`/api/v1/group/  (GET, POST)`
+`/api/v1/follow/ (GET, POST)`
 
 ##### Для доступа к API необходимо получить токен:
 
